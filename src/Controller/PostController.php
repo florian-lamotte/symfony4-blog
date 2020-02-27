@@ -12,7 +12,7 @@ class PostController extends AbstractController
    */
   public function list()
   {
-  	$url = $this->generateUrl('blog_post', ['id' => 1]);
+    $url = $this->generateUrl('blog_post', ['id' => 1]);
 
     return $this->render('post/list.html.twig', ['url' => $url]);
   }
